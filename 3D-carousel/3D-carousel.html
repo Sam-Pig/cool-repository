@@ -12,8 +12,11 @@
       width: 210px;
       height: 140px;
       position: relative;
-      margin: 0 auto 40px;
+      margin: 0 auto;
       border: 1px solid #ccc;
+      /* display: flex;
+      justify-content:center;
+      align-items:Center; */
       perspective: 1100px;
     }
     @keyframes scroll {
@@ -33,7 +36,9 @@
       transition: transform 1s;
       animation: scroll 8s infinite;
     }
-
+    #carousel:hover {
+      animation-play-state:paused;
+    }
     #carousel figure {
       display: block;
       position: absolute;
@@ -42,14 +47,19 @@
       left: 10px;
       top: 10px;
       border: 2px solid black;
-      line-height: 116px;
+      line-height: 20px;
       font-size: 20px;
       font-weight: bold;
-      word-wrap: break-word; 
-      /* word-break: normal;  */
-      color: white;
       text-align: center;
       margin: 0;
+    }
+
+    #carousel figure a {
+      text-decoration: none;
+      /* word-wrap: break-word; 
+      word-break: normal;  */
+      color: white;
+      padding: 58px 0;
     }
 
     #carousel figure:nth-child(1) {
@@ -138,10 +148,9 @@
         <figure><a href="https://sam-pig.github.io/code-animation-resume/index.html">代码动画简历</a></figure>
         <figure><a href="https://sam-pig.github.io/vue-resumer-1/dist/index.html">Vue搭建在线简历生成器（半成品）</a></figure>
         <figure><a href="https://sam-pig.github.io/cool-repository/3D-carousel/3D-carousel.html">3D-carousel</a></figure>
-        <figure><a href="">9</a></figure>
+        <figure><a href="https://sam-pig.github.io/vue-todo-2/dist/index.html">Vue搭建自适应todo</a></figure>
       </div>
     </section>
-
   </body>
 
 </html>
